@@ -2,7 +2,7 @@
 //  LoadableImageView.swift
 //  FlickrApp
 //
-//  Created by Carlos Henderson on 9/3/21.
+//  Created by Michael Romeu on 12/5/22.
 //
 
 import UIKit

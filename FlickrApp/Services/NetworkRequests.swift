@@ -2,7 +2,7 @@
 //  NetworkRequests.swift
 //  FlickrApp
 //
-//  Created by Carlos Henderson on 9/3/21.
+//  Created by Michael Romeu on 12/5/22.
 //
 
 import Foundation
@@ -23,7 +23,7 @@ enum NetworkRequests {
             guard var urlComponents = URLComponents(string: NetworkConstants.baseURL) else {
                 return nil
             }
-            // format=json&nojsoncallback=1
+            // NOTE: format=json&nojsoncallback=1
             urlComponents.queryItems = [URLQueryItem(name: "tags", value: tagQuery), URLQueryItem(name: "format", value: "json"), URLQueryItem(name: "nojsoncallback", value: "1")]
             return urlComponents.url
         case .image(let urlString):
